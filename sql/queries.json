@@ -1,0 +1,4 @@
+{
+	"duplicate_emails": "SELECT * FROM Person GROUP BY email having count(id) > 1;",
+	"combine_two_tables": "select person.firstName, person.lastName, address.city, address.state from person left join address on person.personId = address.personId;"
+}
