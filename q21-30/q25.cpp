@@ -3,14 +3,15 @@
 
 std::vector<int> addToArrayForm(std::vector<int>& nums, int k) {
 
-	int sum = 0;
-	for (int elem : nums) sum = ( sum * 10 ) + elem;
+	for (int i=nums.size()-1; i>=0; i--) {
+		nums[i] += k;
+		k = nums[i] / 10;
+		nums[i] %= 10;
+	}
 
-	sum += k;
-	nums.clear();
-	while(sum > 0) {
-		nums.insert(nums.begin(), sum % 10);
-		sum /= 10;
+	while (k > 0) {
+		nums.insert(nums.begin(), k % 10);
+		k /= 10;
 	}
 
 	return nums;
