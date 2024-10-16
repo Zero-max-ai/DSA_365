@@ -1,5 +1,12 @@
 {
-	"day 11": "q11 - contains duplicate, tag=easy, 217",
-	"day 18": "q18 - contains duplicate II, tag=easy 219",
-	"day 19": "q19 - ugly number II"
+  "easy" : {
+	  "day 11": "q11 - 217. contains duplicate",
+	  "day 18": "q18 - 219. contains duplicate II",
+	  "day 19": "q19 - ugly number II"
+  },
+
+  "medium" : {
+    "_comment" : "make the code a little shorter pls",
+    "day 4": "q4 - 1405. Longest Happy String"
+  }
 }
