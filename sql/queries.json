@@ -2,4 +2,5 @@
 	"duplicate_emails": "SELECT * FROM Person GROUP BY email having count(id) > 1;",
 	"combine_two_tables": "select person.firstName, person.lastName, address.city, address.state from person left join address on person.personId = address.personId;",
   "employees_earning_more_than_their_managers": "Select e.name as Employee from Employee e join Employee m on e.managerId = m.id where e.managerId is not null and e.salary > m.salary;"
+  "big_countries": "select name, population, area from world where area>=3000000 or population>=25000000;"
 }
