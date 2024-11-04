@@ -3,5 +3,6 @@
 	"combine_two_tables": "select person.firstName, person.lastName, address.city, address.state from person left join address on person.personId = address.personId;",
   "employees_earning_more_than_their_managers": "Select e.name as Employee from Employee e join Employee m on e.managerId = m.id where e.managerId is not null and e.salary > m.salary;",
   "big_countries": "select name, population, area from world where area>=3000000 or population>=25000000;",
-  "game_play_analysis_I": "select player_id MIN(event_date) as first_login from Activity group by player_id"
+  "game_play_analysis_I": "select player_id MIN(event_date) as first_login from Activity group by player_id;",
+  "customers_who_never_order": "select name as Customers from Customers left join Orders on Customers.id = Orders.customerId where Orders.customerId is NULL;"
 }
